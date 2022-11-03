@@ -1,0 +1,126 @@
++ versions of the German code machine?
+- Enigma
++ Complex Version of Enigma?
+- submarine version
++ what was accomplish in 1960?
+- Mainframe
++ what happens in 1970's and 80's?
+- Arpanet
++ Discucss password secrurity?
+- Maurice Wilkes
++ what is security?
+- the quality or state of being secure to be free from danger
++ What are the multiple layers of security?
+- Physical,Personnel,Operation,Communication,Network,Information Security
++ It protect physical items, objects, or areas from unauthorized access and misuse?
+- Physical Security
++ It protect the individual or group of individuals who are authorized to access the organization and its operations?
+- Personnel Security
++ It protect the details of a particular operation or series of activities?
+- Operation Security
++ It protect communications media, technology and content?
+- Communication Security
++ It protect networking components, connections and contents?
+- Network Security
++ It protect the confidentiality, integrity and availability of information assets, whether in storage, processing, or transmission?
+- Information Security
++ What are the key Information Security Concepts
+- Access, Asset and Attack
++ A subject or object’s ability to use, manipulate, modify, or affect another subject or object?
+- Access
++ The organizational resource that is being protected. An asset can be logical, such as a Web site, information, or data; or an asset can be physical, such as a person, computer system, or other tangible object?
+- Asset
++ An intentional or unintentional act that can cause damage to or otherwise compromise information and/or the systems that support it.
+- Attack
++ Security mechanisms, policies, or procedures that can successfully counter attacks, reduce risk, resolve vulnerabilities, and otherwise improve the security within an organization?
+- Control, safeguard, or countermeasure
++ A technique used to compromise a system?
+- Exploit
++ A condition or state of being exposed. In information security, exposure exists when a vulnerability known to an attacker is present.
+- Exposure
++ A single instance of an information asset suffering damage or unintended or unauthorized modification or disclosure
+- Loss
++ The entire set of controls and safeguards, including policy, education, training and awareness, and technology, that the organization implements (or fails to implement) to protect the asset.
+- Protection profile or security posture
++ The probability that something unwanted will happen.
+- Risk
++ A computer can be either the subject of an attack—an agent entity used to conduct the attack—or the object of an attack—the target entity.
+- Subjects and objects
++ A category of objects, persons, or other entities that presents a danger to an asset. Threats are always present and can be purposeful or undirected
+- Threat
++ The specific instance or a component of a threat
+- Threat Agent
++ A weaknesses or fault in a system or protection mechanism that opens it to attack or damage.
+- Vulnerability
++ enables authorized users—persons or computer systems—to access information without interference or obstruction and to receive it in the required format.
+- Availability
++ Information has accuracy when it is free from mistakes or errors and it has the value that the end user expects. If information has been intentionally or unintentionally modified, it is no longer accurate
+- Accuracy
++ information is the quality or state of being genuine or original, rather than a reproduction or fabrication.
+- Authenticity
++ Information has integrity when it is whole, complete, and uncorrupted. The integrity of information is threatened when the information is exposed to corruption
+- Integrity
++ Information has confidentiality when it is protected from disclosure or exposure to unauthorized individuals or systems.
+- Confidentiality
++ To protect the confidentiality of information, you can use a number of measures, including the following:
+- Information classification, Secure document storage, Application of general security policies, Education of information custodians and end users
++ The utility of information is the quality or state of having value for some purpose or end.
+- Utility
++ The possession of information is the quality or state of ownership or control.
+- Possession
++ is perhaps the most difficult IS component to secure.
+- Software
++ It accounts for a substantial portion of the attacks on information.
+- Exploitation of Errors
++ the physical technology that houses and executes the software, stores and transports the data, and provides interfaces for the entry and removal of information from the system.
+- Hardware
++ Data stored, processed, and transmitted by a computer system must be protected.
+- Data
++ Though often overlooked in computer security considerations, people have always been a threat to information security.
+- People
++ Another frequently overlooked component of an IS?
+- Procedures
++ are written instructions for accomplishing a specific task.
+- Procedures
++ The IS component that created much of the need for increased computer and information security
+- Networks
++ The two approach in information security
+- Bottom-up and Top-Down
++ What approach is this: Information security can begin as a grassroots effort in which systems administrators attempt to improve the security of their systems.
+- Bottom-up Approach
++ which the project is initiated by upper-level managers who issue policy, procedures and processes, dictate the goals and expected outcomes, and determine accountability for each required action—has a higher probability of success.
+- Top-down
++ A senior executive who promotes the project and ensures its support, both financially and administratively, at the highest levels of the organization.
+- Champion
++ A project manager, who may be a departmental line manager or staff unit manager, who understands project management, personnel management, and information security technical requirements.
+- Team Leader
++ People who understand the organizational culture, existing policies, and requirements for developing and implementing successful policies.
+- Security policy developers
++ People who understand financial risk assessment techniques, the value of organizational assets, and the security methods to be used.
+- Risk assessment specialists
++ Dedicated, trained, and well-educated specialists in all aspects of information security from both a technical and nontechnical standpoint.
+- Securit Proffersionals
++ People with the primary responsibility for administering the systems that house the information used by the organization.
+- Systems administrators
++ Those whom the new system will most directly affect.
+- End users
++ The three types of data ownership?
+- Data owners, Data Custodian, Data Users
++ Those responsible for the security and use of a particular set of information.
+- Data Owners
++ Working directly with data owners, data custodians are responsible for the storage, maintenance, and protection of the information.
+- Data Custodians
++ End users who work with the information to perform their assigned roles supporting the mission of the organization.
+- Data users
++ The roles of information security professionals are aligned with the goals and mission of the information security community of interest.
+- Information Security Management and Professionals
++ The community of interest made up of IT managers and skilled professionals in systems design, programming, networks, and other related disciplines has many of the same objectives as the information security community.
+- Information Technology Management and Professionals
++ The organization’s general management team and the rest of the resources in the organization make up the other major community of interest
+- Organizational Management and Professionals
++ why does securit is an art?
+- The administrators and technicians who implement security can be compared to a painter applying oils to canvas. A touch of color here, a brush stroke there, just enough to represent the image the artist wants to convey without overwhelming the viewer, or in security terms, without overly restricting user access.
++ Why Security as Science
+- Technology developed by computer scientists and engineers—which is designed for rigorous performance levels—makes information security a science as well as an art. Most scientists agree that specific conditions cause virtually all actions in computer systems.
++ Security as a Social Science
+- A third view to consider is information security as a social science, which integrates some of the components of art and science and adds another dimension to the discussion. Social science examines the behavior of individuals as they interact with systems, whether these are societal systems or, as in this context, information systems
