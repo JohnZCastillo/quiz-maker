@@ -1,7 +1,8 @@
-const file = document.querySelector("#file");
+let file = null;
 const output = document.querySelector("#output");
 const next = document.querySelector("#next");
 const answer = document.querySelector("#answer");
+const itect85 = document.querySelector("#itec85");
 
 let viewedQuestion = [];
 
@@ -17,6 +18,17 @@ const type = {
   fill: 0,
   multiple: 1,
 };
+
+itect85.addEventListener("click", async () => {
+  try {
+    file = await fetch("itec85.txt");
+    file = await file.text();
+    if (file === null) throw new Error("Cannot get file");
+    readFile();
+  } catch (error) {
+    console.log(error.message);
+  }
+});
 
 answer.addEventListener("click", () => {
   if (!counter) {
@@ -147,17 +159,10 @@ const renderOutput = () => {
   output.appendChild(div);
 };
 
-// upon submitting file
-file.addEventListener("change", () => {
-  const fileReader = new FileReader();
-
-  fileReader.onload = function () {
-    data = fileReader.result.split("");
-    showQuestion();
-  };
-
-  fileReader.readAsText(file.files[0]);
-});
+const readFile = () => {
+  data = file.split("");
+  showQuestion();
+};
 
 next.addEventListener("click", () => {
   renderOutput();
