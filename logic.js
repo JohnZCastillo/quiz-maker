@@ -3,6 +3,8 @@ const output = document.querySelector("#output");
 const next = document.querySelector("#next");
 const answer = document.querySelector("#answer");
 
+let viewedQuestion = [];
+
 let questionNumber = 0;
 let currentQuestion = null;
 // ignore
@@ -27,6 +29,10 @@ answer.addEventListener("click", () => {
     counter = 0;
   }
 });
+
+const shuffle = () => {
+  const random = () => Math.floor(Math.random() * exam.length);
+};
 
 // Model for question
 const generateQuestion = (type, question) => {
@@ -117,16 +123,24 @@ const showQuestion = () => {
   }
 };
 
+const random = () => Math.floor(Math.random() * exam.length);
+
 // render questions as html
 const renderOutput = () => {
+  let index = random();
+
+  while (viewedQuestion.includes(index)) {
+    index = random();
+  }
+
   output.innerHTML = null;
 
   const div = document.createElement("div");
   const h3 = document.createElement("h3");
 
-  h3.innerHTML = exam[questionNumber].question;
+  h3.innerHTML = exam[index].question;
 
-  currentQuestion = exam[questionNumber];
+  currentQuestion = exam[index];
 
   div.appendChild(h3);
 
