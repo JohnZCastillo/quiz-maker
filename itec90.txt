@@ -1,120 +1,332 @@
 + CSS stands for
 - COMPUTER SYSTEM SERVICING
+
 + Networking principles is under the ?
 - CSS
+
 + is a set of policies and procedures that is followed in a workplace in order to prevent accidents, illnesses, and injuries.
 - OCCUPATIONAL HEALTH AND SAFETY (OHS)
+
 + Three steps may be done in order to facilitate OHS procedures in a CSS workspace:
 - Hazard Identification, Risk Assessment, Risk Control
+
 + The computer equipment
 - Hardware
+
 + Programs which tell the computer what to do
 - Software
+
 + father of computer
 - Charles Babbage
+
 + What did charles babbage did?
 - 1800’s planned analytical engine
+
 +  when did ENIAC developed?
 - developed at end of WWII
+
 + what eniac generation is very large, used unreliable vacuum tubes
 - 1st and 2nd
+
 + what eniac generation is  smaller, faster - use transistors and integrated circuits
 - present - 3rd and 4th generation
+
 + First sold in late 1970’s
 - apple
+
 + First sold in 1981 and Was quickly accepted by businesses
 - IBM Personal Computer
+
 + what is the meaning of IBM?
 - International Business Machine
+
 + Computer Social Impact
 - Threat to privacy, Reduce personal interactions, Displace workers and change workplace, Computer failures cause great damage, Artificial Intelligence: Machines smarter than their creators
+
 + Types of computer
 - Personal Computer, Mini computer, mainframe computers, super computer
+
 + Also called Microcomputers
 - Personal COmputer
+
 + Size of filing cabinet, Used by small and medium size companies and institutions
 - Mini Computer
+
 + a computer that Very powerful Very fast and Used by large corporations and governmental agencies?
 - Super Computer
+
 + Most powerful, Fastest, Most expensive and used only by governments
 - SuperComputers
+
 + what is the computer Operation
 - Input, processing, Output, external storage
+
 + Most commonly used input device
 - Keyboard
+
 + Controls cursor on screen
 - mouse
+
 + Made up of tiny elements called pixels
 - Monitor
+
 + is how sharp and clear the picture is
 - Resolution
+
 + Types of Printer
 - laser,ink jet, dot matrix
+
 + Works similar to a copy machine
 - laser printer
+
 + Squirts small jet of ink onto paper to form characters
 - Ink jet
+
 + Strikes pins against ribbon to print
 - Dot martrix
+
 + Measured in pages per minute (PPM)
 - printer speed
+
 + a printers range from 20-45 ppm
 - laser printer
+
 + Quality of Print
 - One measure is dots per inch (DPI)
+
 + eight bits
 - Byte
+
 + 1,000 bytes
 - Kilobyte
+
 + 1million bytes
 - megabyte
+
 + approx. 1 billion bytes
 - Gigabyte
+
 + Is the “brain” of the computer
 - CPU
+
 + Number of “cycles” per second computer can operate
 - clock speed (Measured in megahertz (MHz))
+
 + One MHz equals to?
 - 1 million cycles per second
+
 + One gigahertz(GHz) equals to?
 - 1 billion cycle
+
 + Can not only read current info but also write new info and it is  Very important in determining capabilities of the computer system
 - RAM
+
 + Read Only Memory
 - ROM
+
 + Built into machine and Made up of stack of platters
 - Hard drives
+
 + CD ROM
 - read only and same as music cds
+
 + DVD-ROM
 - Digital Video Disc
+
 + Connects computer to another device
 - ports
+
 + Used primarily by printers
 - paraller port
+
 + Modem, mouse, etc.
 - Seials ports
+
 + chain devices
 - SCSI
+
 + may be needed for, Digital Cameras, Mp3 players, Other devices
 - USB
+
 + hardware device that converts data from a digital format, intended for communication directly between devices with specialized wiring, into one suitable for a transmission medium such as telephone lines or radio.
 - Modems
+
 + What are the six elemenets of computer system
 - hardware, software, people, procedures, data and connectivity
+
 + The most important element of a computer system
 - users
+
 + step by step series of instructions to perform a specific function and achieve desired output.
 - procedure
+
 + three types of procedures in computer system
 - hardware-oriented,software-oriented, interanl prodcedure
+
 + Defines the working of a Hardware Component
 - hardware Oriented procedure
+
 + It is a set of detailed instructions for using the software.
 - software-oriented procedure
+
 + It maintains the overall internal working of each part of a computer system by directing the flow of information.
 - internal procedure
+
 + facts and figures that are fed into a computer for further processing are called
 - data
+
 + is raw until the computer system interprets it using machine language, stores it in memory, classifies it for processing and produces results in conformance with the instructions given to it.
 - data
+
++ It is the physical devices that are required for communication and interaction between hardware on a computer network.
+- Computer network
+
++ It connect multiple computer networking devices together; also acts as a repeater in that it amplifies signals that deteriorate after traveling long distances over connecting cables. A hub is the simplest in the family of network connecting devices because it connects LAN components with identical protocols.
+- Hub
+
++ Switches generally have a more intelligent role than hubs; maintains limited routing information about nodes in the internal network, and it allows connections to systems like hubs or routers. Strands of LANs are usually connected using switches. Generally, switches can read the hardware addresses of incoming packets to transmit them to the appropriate destination.
+- Switch
+
++ Discuss: Switch VS Hub
+- A Hub is a broadcast device that sends data from one node to all nodes but a Switch is a multicast device that can send data to a particular node; A Hub supports half-duplex i.e., only one device can send or receive data at a time while a switch supports full-duplex i.e., both devices can send and receive data at the same time.
+
++ a networking device that operates under the network layer of the OSI model and is used to connect two or more networks. It is a device that establishes a common link between networks to enable data flow between them.
+- routers
+
++ effectively contains two wireless routers, similar to the wireless router you already have in your home or office. One of these wireless routers picks up the existing WiFi network. It then transfers the signal to the other wireless router, which transmits the boosted signal.
+- repeater
+
++ Discuss: Router vs repeater
+- Your router can act as a repeater, but your repeater can not operate as a router. The router is being used to connect to the internet, whereas the repeater is used to replicate the router's received signals and the repeater amplifies.
+
++ It is commonly used in local area networks for connecting many nodes.
+- Switch
+
++ benifits of using switch
+- Increase LAN bandwidth: divides a LAN into many collision domains, each with its broadband connection, considerably improving the LAN’s bandwidth.
+
++ how does switch Increase lan bandwidth?
+- divides a LAN into many collision domains, each with its broadband connection, considerably improving the LAN’s bandwidth.
+
++ It is commonly used in Local Area Network and Metropolitan Area Network
+- Router
+
++ what does switch do?
+- It manages traffic by forwarding data packets to their proper IP addresses. Traffic between these networks may be managed. It determines the best path to send packets.
+
++ It is similar to a switch because it is used in the Local Area Network (LAN).
+- Hub
+
++ It is used for network monitoring. They are also used in organizations to provide connectivity. It can be used to create a device that is available throughout the network.
+- Hub
+
++ They define the direction in which data flows between two communicating devices. 
+- Modes of Data Transaction
+
++ What are the three types of transmission modes:
+- simplex, Half-duplex, full-duplex
+
++ In this mode of transmission, data can only move to one direction i.e., a device can only send data but cannot receive and the receiver can only receive but cannot send the data.
+- simplex
+
++ In this mode, only one device can send or receive data at a time but not both at the same time.
+-  Half-duplex
+
++ In this mode, a device can send and receive data at the same time.
+- Full duplex
+
++ is a group of two or more connected computers, 
+- Network
+
++ is a network contained within a small geographic area, usually within the same building.
+- lan
+
++ are common examples of LANs.
+- Home WiFi networks and small
+
++ is a collection of local-area networks (LANs) or other networks that communicate with one another.
+- WAN
+
++ often used by large businesses to connect their office networks; each office typically has its own local area network, or LAN, and these LANs connect via a WAN. These long connections may be formed in several different ways, including leased lines and VPNs.
+- WAN
+
++ is a class of network which serves a large geographical area between 5 to 50 kilometers in range. This geographical area can include several buildings, such as a college campus, sometimes referred to as a campus network, or an area a large as a city
+- Metropolitan Network
+
++ short for coaxial?
+- coax
+
++ is a type of cable used to transmit data, the internet, video and voice communications.
+- Coax
+
++ is made up of an aluminum and copper shield with an outer plastic jacket (see below) with the dielectric insulator helping to minimize signal loss.
+- Coax cable
+
++ is derived from several characteristics of the physical medium.
+- 10base5
+
++ what does 10,and 5 represents in 10base5?
+- The 10 refers to its transmission speed of 10Mbit/s. The BASE is short for baseband signaling (as opposed to broadband), and the 5 stands for the maximum segment length of 500 meters (1,600 ft).
+
++ refers to a single-channel digital system and that single channel is used to communicate with devices on a network.
+- baseband
+
++ is wide bandwidth data transmission which generates an analog carrier frequency, which carries multiple digital signals or multiple channels.
+- broadband
+
++ is a type of wiring in which two conductors of a single circuit are twisted together for the purposes of improving electromagnetic compatibility.
+- twisted pair cabling
+
++ is the amount of data moved successfully from one place to another in a given time period.
+- network throughput
+
++ throughput is typically measured in what?
+- in bits per second (bps), as in megabits per second (Mbps) or gigabits per second (Gbps).
+
++ The maximum amount of data transmitted over an internet connection in a given amount of time.
+- bandwidth
+
++ often mistaken for internet speed when it's actually the volume of information that can be sent over a connection in a measured amount of time 
+- bandwidth (calculated in megabits per second (Mbps))
+
++ is the loss of signal strength in networking cables or connections.
+- Attenuation
+
++ Attenuation occurs on computer networks because?
+-  Range – over longer distances both wired and wireless transmissions gradually dissipate in strength. Interference – radio interference or physical obstructions, such as walls, dampen communication signals on wireless networks.
+
++ contains anywhere from a few to hundreds of optical fibers within a plastic casing. Also known as optic cables or optical fiber cables, they transfer data signals in the form of light and travel hundreds of miles significantly faster than those used in traditional electrical cables.
+- Fiber Optic cable
+
++ were used to link computers together in the NORAD headquarters, located in Colorado.
+- Fiber Optic cable
+
++ It wasn’t until 1996 that the first  ___ was buried deep within the Pacific Ocean, which allowed for the Internet as we know it today to be a possibility.
+- fully optic fiber cable.
+
++ THREE TYPES OF CABLES?
+- Straight-Through, Crossover and Rollover or Console
+
++ It is used to connect devices having different function. For example: Connecting a router to a hub or switch. Connecting a server to a hub or switch. Connecting workstations to a hub or switch.
+- Straight Cable
+
++ It is used to connect devices having same functions or roles. For example: Connecting uplinks between switches. Connecting hubs to switches. Connecting a hub to another hub. Connecting PC to PC Connecting PC to a Router Connecting 2 routers together without a hub or a switch.
+- Crossover Cable
+
++ It is used for device configuration. For example you have bought a new router and what to configure it with initial config. You need a console cable for same. One end of console cable is connected to console port of the router or a switch and other end would be connected to NIC port of your laptop or PC.
+- Rollover or Console
+
++ An 8-pin/8-position plug or jack that is commonly used to connect computers onto Ethernet-based local area networks
+- rj45
+
++ Enumrates the things you need to create a network cable
+- crimping tool, rj45, network cable(UTP), Network Cable Tester
+
++ UTP meaning?
+- Unshielded twisted pair
+
+
+
+
+
+
