@@ -16,7 +16,7 @@ let counter = 0;
 const tempQuestionDisplay = document.createElement("div");
 tempQuestionDisplay.classList.add("h3");
 let data = null;
-const exam = [];
+let exam = [];
 const type = {
   fill: 0,
   multiple: 1,
