@@ -1,13 +1,13 @@
 + System analyst 
 - Bridges the gap between persons who need computer and who understand technology; study the problem and needs to determine to solve the problem.
 
-+responsibilities of system anaylsis when information technology is used
++ responsibilities of system anaylsis when information technology is used
 - effiecient data capturing, flow of data to computer, process and storage of data, flow of information to peaple and business
 
-+How system analyst help the business.
++ How system analyst help the business.
 - solving problem using concepts and information technology
 
-+Role of system anlysist
++ Role of system anlysist
 - Business Analysist, Application Analysist
 
 + do business problem and requirement analysis
@@ -26,10 +26,7 @@
 - understand the problem, verify benifits of solving the problem, define requirements for solving the problem, decide which solution is best, implement the solutin, monitor to make sure the desired result is obtained
 
 + Example of information system
-- Transacion processing system, Management Information System, Decision Support System
-- Expert Decision System
-- Office Automation
-- Communication Support System
+- Transacion processing system, Management Information System, Decision Support System, Expert Decision System, Office Automation, Communication Support System
 
 + extension of DSS; a program that simulates a problem solver would do to solve the problem from given data of DSS
 - Expert Decision System
@@ -130,7 +127,7 @@
 + It is iterative waterfall, has fedback 
 - Modified waterfall approach
 
-- path allows phases to be reworked
++ path allows phases to be reworked
 - waterfall (feedback)
 
 + what are the newer adaptive approach
@@ -257,7 +254,7 @@
 - Obect-oriented design
 
 + Object coding or Languages: 
-- Simula, C++, Java, C#, Visual Basic, .NET
+- Simula, C(plus plus), Java, C#, Visual Basic, .NET
 
 + thing with attributes and behaviors
 - Object
@@ -310,7 +307,7 @@
 + Describes visual modeling o Round-trip engineering
 - Embarcadero
 
-+ Integrates Microsoft Visual Studio.NET IDE o Also provides visual modeling and round-trip
++ Integrates Microsoft Visual Studio.NET IDE Also provides visual modeling and round-trip
 -  Raional XDE Professional
 
 + a computer software program that executes on a computing

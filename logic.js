@@ -6,6 +6,7 @@ const itect85 = document.querySelector("#itec85");
 const itect90 = document.querySelector("#itec90");
 const dcit26 = document.querySelector("#dcit26");
 const insy55 = document.querySelector("#insy55");
+const questionNumberDisplay = document.querySelector("#question-number");
 
 let viewedQuestion = [];
 
@@ -143,6 +144,27 @@ const showQuestion = () => {
           break;
         default:
           console.log("Error", data[index]);
+          let value = index;
+
+          console.log(data[value - 10]);
+          console.log(data[value - 9]);
+          console.log(data[value - 8]);
+          console.log(data[value - 7]);
+          console.log(data[value - 6]);
+          console.log(data[value - 5]);
+          console.log(data[value - 4]);
+          console.log(data[value - 3]);
+          console.log(data[value - 2]);
+          console.log(data[value - 1]);
+          console.log(value);
+          console.log(data[value]);
+          console.log(data[value + 1]);
+          console.log(data[value + 2]);
+          console.log(data[value + 3]);
+          console.log(data[value + 4]);
+          console.log(data[value + 5]);
+          console.log(data[value + 6]);
+          console.log(data[value + 7]);
       }
 
       exam.push(question);
@@ -160,6 +182,8 @@ const renderOutput = () => {
     index = random();
     console.log(index, "looping");
   }
+
+  viewedQuestion.push(index);
 
   output.innerHTML = null;
 
@@ -183,5 +207,10 @@ const readFile = () => {
 };
 
 next.addEventListener("click", () => {
+  // return if exam is empty
+  if (!exam.length) return;
+
+  questionNumberDisplay.innerHTML =
+    viewedQuestion.length + 1 + "/" + exam.length;
   renderOutput();
 });
