@@ -1,0 +1,120 @@
++ CSS stands for
+- COMPUTER SYSTEM SERVICING
++ Networking principles is under the ?
+- CSS
++ is a set of policies and procedures that is followed in a workplace in order to prevent accidents, illnesses, and injuries.
+- OCCUPATIONAL HEALTH AND SAFETY (OHS)
++ Three steps may be done in order to facilitate OHS procedures in a CSS workspace:
+- Hazard Identification, Risk Assessment, Risk Control
++ The computer equipment
+- Hardware
++ Programs which tell the computer what to do
+- Software
++ father of computer
+- Charles Babbage
++ What did charles babbage did?
+- 1800’s planned analytical engine
++  when did ENIAC developed?
+- developed at end of WWII
++ what eniac generation is very large, used unreliable vacuum tubes
+- 1st and 2nd
++ what eniac generation is  smaller, faster - use transistors and integrated circuits
+- present - 3rd and 4th generation
++ First sold in late 1970’s
+- apple
++ First sold in 1981 and Was quickly accepted by businesses
+- IBM Personal Computer
++ what is the meaning of IBM?
+- International Business Machine
++ Computer Social Impact
+- Threat to privacy, Reduce personal interactions, Displace workers and change workplace, Computer failures cause great damage, Artificial Intelligence: Machines smarter than their creators
++ Types of computer
+- Personal Computer, Mini computer, mainframe computers, super computer
++ Also called Microcomputers
+- Personal COmputer
++ Size of filing cabinet, Used by small and medium size companies and institutions
+- Mini Computer
++ a computer that Very powerful Very fast and Used by large corporations and governmental agencies?
+- Super Computer
++ Most powerful, Fastest, Most expensive and used only by governments
+- SuperComputers
++ what is the computer Operation
+- Input, processing, Output, external storage
++ Most commonly used input device
+- Keyboard
++ Controls cursor on screen
+- mouse
++ Made up of tiny elements called pixels
+- Monitor
++ is how sharp and clear the picture is
+- Resolution
++ Types of Printer
+- laser,ink jet, dot matrix
++ Works similar to a copy machine
+- laser printer
++ Squirts small jet of ink onto paper to form characters
+- Ink jet
++ Strikes pins against ribbon to print
+- Dot martrix
++ Measured in pages per minute (PPM)
+- printer speed
++ a printers range from 20-45 ppm
+- laser printer
++ Quality of Print
+- One measure is dots per inch (DPI)
++ eight bits
+- Byte
++ 1,000 bytes
+- Kilobyte
++ 1million bytes
+- megabyte
++ approx. 1 billion bytes
+- Gigabyte
++ Is the “brain” of the computer
+- CPU
++ Number of “cycles” per second computer can operate
+- clock speed (Measured in megahertz (MHz))
++ One MHz equals to?
+- 1 million cycles per second
++ One gigahertz(GHz) equals to?
+- 1 billion cycle
++ Can not only read current info but also write new info and it is  Very important in determining capabilities of the computer system
+- RAM
++ Read Only Memory
+- ROM
++ Built into machine and Made up of stack of platters
+- Hard drives
++ CD ROM
+- read only and same as music cds
++ DVD-ROM
+- Digital Video Disc
++ Connects computer to another device
+- ports
++ Used primarily by printers
+- paraller port
++ Modem, mouse, etc.
+- Seials ports
++ chain devices
+- SCSI
++ may be needed for, Digital Cameras, Mp3 players, Other devices
+- USB
++ hardware device that converts data from a digital format, intended for communication directly between devices with specialized wiring, into one suitable for a transmission medium such as telephone lines or radio.
+- Modems
++ What are the six elemenets of computer system
+- hardware, software, people, procedures, data and connectivity
++ The most important element of a computer system
+- users
++ step by step series of instructions to perform a specific function and achieve desired output.
+- procedure
++ three types of procedures in computer system
+- hardware-oriented,software-oriented, interanl prodcedure
++ Defines the working of a Hardware Component
+- hardware Oriented procedure
++ It is a set of detailed instructions for using the software.
+- software-oriented procedure
++ It maintains the overall internal working of each part of a computer system by directing the flow of information.
+- internal procedure
++ facts and figures that are fed into a computer for further processing are called
+- data
++ is raw until the computer system interprets it using machine language, stores it in memory, classifies it for processing and produces results in conformance with the instructions given to it.
+- data

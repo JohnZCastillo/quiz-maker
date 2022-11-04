@@ -3,6 +3,9 @@ const output = document.querySelector("#output");
 const next = document.querySelector("#next");
 const answer = document.querySelector("#answer");
 const itect85 = document.querySelector("#itec85");
+const itect90 = document.querySelector("#itec90");
+const dcit26 = document.querySelector("#dcit26");
+const insy55 = document.querySelector("#insy55");
 
 let viewedQuestion = [];
 
@@ -19,15 +22,27 @@ const type = {
   multiple: 1,
 };
 
-itect85.addEventListener("click", async () => {
+const changeFile = async (fileName) => {
   try {
-    file = await fetch("itec85.txt");
+    viewedQuestion = [];
+    file = await fetch(fileName);
     file = await file.text();
-    if (file === null) throw new Error("Cannot get file");
     readFile();
   } catch (error) {
     console.log(error.message);
   }
+};
+
+itect85.addEventListener("click", () => {
+  changeFile("itec85.txt");
+});
+
+itect90.addEventListener("click", () => {
+  changeFile("itec90.txt");
+});
+
+insy55.addEventListener("click", () => {
+  changeFile("ins55.txt");
 });
 
 answer.addEventListener("click", () => {
@@ -143,6 +158,7 @@ const renderOutput = () => {
 
   while (viewedQuestion.includes(index)) {
     index = random();
+    console.log(index, "looping");
   }
 
   output.innerHTML = null;
@@ -166,5 +182,4 @@ const readFile = () => {
 
 next.addEventListener("click", () => {
   renderOutput();
-  if (questionNumber < exam.length - 1) questionNumber++;
 });
