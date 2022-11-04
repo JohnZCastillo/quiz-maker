@@ -176,6 +176,8 @@ const renderOutput = () => {
 };
 
 const readFile = () => {
+  //reset exam
+  exam = [];
   data = file.split("");
   showQuestion();
 };
