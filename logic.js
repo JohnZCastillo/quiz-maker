@@ -216,6 +216,7 @@ const readFile = () => {
   data = file.split("");
   showQuestion();
   subjectDisplay.innerHTML = subject;
+  currentIndex = 0;
 };
 
 let currentIndex = 0;
