@@ -1,12 +1,17 @@
 let file = null;
 const output = document.querySelector("#output");
 const next = document.querySelector("#next");
+const prev = document.querySelector("#previous");
+const subjectDisplay = document.querySelector("#subject");
+
 const answer = document.querySelector("#answer");
 const itect85 = document.querySelector("#itec85");
 const itect90 = document.querySelector("#itec90");
 const dcit26 = document.querySelector("#dcit26");
 const insy55 = document.querySelector("#insy55");
 const questionNumberDisplay = document.querySelector("#question-number");
+
+let subject = null;
 
 let viewedQuestion = [];
 
@@ -36,14 +41,17 @@ const changeFile = async (fileName) => {
 
 itect85.addEventListener("click", () => {
   changeFile("itec85.txt");
+  subject = "itec 85";
 });
 
 itect90.addEventListener("click", () => {
   changeFile("itec90.txt");
+  subject = "itec 90";
 });
 
 insy55.addEventListener("click", () => {
   changeFile("ins55.txt");
+  subject = "insy 55";
 });
 
 answer.addEventListener("click", () => {
@@ -178,12 +186,15 @@ const random = () => Math.floor(Math.random() * exam.length);
 const renderOutput = () => {
   let index = random();
 
-  while (viewedQuestion.includes(index)) {
-    index = random();
-    console.log(index, "looping");
+  if (currentIndex < viewedQuestion.length) {
+    index = viewedQuestion[currentIndex];
+    console.log("backtacking");
+  } else {
+    while (viewedQuestion.includes(index)) {
+      index = random();
+    }
+    viewedQuestion.push(index);
   }
-
-  viewedQuestion.push(index);
 
   output.innerHTML = null;
 
@@ -204,13 +215,45 @@ const readFile = () => {
   exam = [];
   data = file.split("");
   showQuestion();
+  subjectDisplay.innerHTML = subject;
 };
+
+let currentIndex = 0;
+
+prev.addEventListener("click", () => {
+  // return if exam is empty
+  if (!exam.length || !currentIndex || currentIndex === 1) return;
+
+  questionNumberDisplay.innerHTML = currentIndex - 1 + "/" + exam.length;
+
+  --currentIndex;
+
+  const render = () => {
+    output.innerHTML = null;
+
+    const div = document.createElement("div");
+    const h3 = document.createElement("h3");
+
+    let index = viewedQuestion[currentIndex - 1];
+
+    h3.innerHTML = exam[index].question;
+
+    currentQuestion = exam[index];
+
+    div.appendChild(h3);
+
+    output.appendChild(div);
+  };
+
+  render();
+});
 
 next.addEventListener("click", () => {
   // return if exam is empty
   if (!exam.length) return;
 
-  questionNumberDisplay.innerHTML =
-    viewedQuestion.length + 1 + "/" + exam.length;
+  ++currentIndex;
+
+  questionNumberDisplay.innerHTML = currentIndex + "/" + exam.length;
   renderOutput();
 });
