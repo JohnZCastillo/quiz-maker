@@ -4,25 +4,30 @@ const next = document.querySelector("#next");
 const prev = document.querySelector("#previous");
 const subjectDisplay = document.querySelector("#subject");
 
-const answer = document.querySelector("#answer");
+const answer = document.querySelector("#show-answer");
 const itect85 = document.querySelector("#itec85");
 const itect90 = document.querySelector("#itec90");
 const dcit26 = document.querySelector("#dcit26");
 const insy55 = document.querySelector("#insy55");
 const questionNumberDisplay = document.querySelector("#question-number");
 
+const questionDisplay = document.querySelector("#question");
+const answerDisplay = document.querySelector("#answer");
+
+let currentIndex = -1;
 let subject = null;
-
-let viewedQuestion = [];
-
-let questionNumber = 0;
 let currentQuestion = null;
+
 // ignore
-let counter = 0;
-const tempQuestionDisplay = document.createElement("div");
-tempQuestionDisplay.classList.add("h3");
+let showAnswer = true;
+let autoStatus = false;
+
+// data from text file || raw data
 let data = null;
+
+// data been converted to question and answer
 let exam = [];
+
 const type = {
   fill: 0,
   multiple: 1,
@@ -30,7 +35,6 @@ const type = {
 
 const changeFile = async (fileName) => {
   try {
-    viewedQuestion = [];
     file = await fetch(fileName);
     file = await file.text();
     readFile();
@@ -55,20 +59,20 @@ insy55.addEventListener("click", () => {
 });
 
 answer.addEventListener("click", () => {
-  if (!counter) {
-    output.innerHTML = currentQuestion.choice[0];
-    counter = 1;
-  } else {
-    tempQuestionDisplay.innerHTML = currentQuestion.question;
-    output.innerHTML = "";
-    output.appendChild(tempQuestionDisplay);
-    counter = 0;
-  }
-});
+  console.log("click");
 
-const shuffle = () => {
-  const random = () => Math.floor(Math.random() * exam.length);
-};
+  // show answer
+  if (showAnswer) {
+    questionDisplay.classList.add("d-none");
+    answerDisplay.classList.remove("d-none");
+    showAnswer = false;
+    return;
+  }
+
+  questionDisplay.classList.remove("d-none");
+  answerDisplay.classList.add("d-none");
+  showAnswer = true;
+});
 
 // Model for question
 const generateQuestion = (type, question) => {
@@ -180,81 +184,75 @@ const showQuestion = () => {
   }
 };
 
+const shuffleArray = () => {
+  const usedIndex = [];
+  let index = random();
+
+  while (usedIndex.length < exam.length) {
+    while (usedIndex.includes(index)) {
+      index = random();
+    }
+
+    usedIndex.push(index);
+  }
+
+  let temp = null;
+
+  for (let i = 0; i < usedIndex.length; i++) {
+    const insertValue = exam[usedIndex[i]];
+
+    temp = exam[i];
+
+    exam[i] = insertValue;
+
+    exam[usedIndex[i]] = temp;
+  }
+};
+
 const random = () => Math.floor(Math.random() * exam.length);
 
 // render questions as html
 const renderOutput = () => {
-  let index = random();
-
-  if (currentIndex < viewedQuestion.length) {
-    index = viewedQuestion[currentIndex];
-    console.log("backtacking");
-  } else {
-    while (viewedQuestion.includes(index)) {
-      index = random();
-    }
-    viewedQuestion.push(index);
-  }
-
-  output.innerHTML = null;
-
-  const div = document.createElement("div");
-  const h3 = document.createElement("h3");
-
-  h3.innerHTML = exam[index].question;
-
-  currentQuestion = exam[index];
-
-  div.appendChild(h3);
-
-  output.appendChild(div);
+  questionDisplay.innerHTML = exam[currentIndex].question;
+  answerDisplay.innerHTML = exam[currentIndex].choice[0];
 };
 
 const readFile = () => {
   //reset exam
   exam = [];
   data = file.split("");
+  // get question and answer
   showQuestion();
+  // shuffle index of exam
+  shuffleArray();
+  // displat the current subect
   subjectDisplay.innerHTML = subject;
-  currentIndex = 0;
-};
 
-let currentIndex = 0;
+  currentIndex = -1;
+};
 
 prev.addEventListener("click", () => {
   // return if exam is empty
-  if (!exam.length || !currentIndex || currentIndex === 1) return;
+  if (!exam.length || currentIndex === 0) return;
 
-  questionNumberDisplay.innerHTML = currentIndex - 1 + "/" + exam.length;
+  currentIndex -= 1;
 
-  --currentIndex;
-
-  const render = () => {
-    output.innerHTML = null;
-
-    const div = document.createElement("div");
-    const h3 = document.createElement("h3");
-
-    let index = viewedQuestion[currentIndex - 1];
-
-    h3.innerHTML = exam[index].question;
-
-    currentQuestion = exam[index];
-
-    div.appendChild(h3);
-
-    output.appendChild(div);
-  };
-
-  render();
+  questionNumberDisplay.innerHTML = currentIndex + 1 + "/" + exam.length;
+  renderOutput();
 });
 
 next.addEventListener("click", () => {
   // return if exam is empty
   if (!exam.length) return;
 
-  ++currentIndex;
+  // do not execute if last question is reach
+  if (currentIndex === exam.length) return;
 
-  questionNumberDisplay.innerHTML = currentIndex + "/" + exam.length;
+  currentIndex++;
+
+  console.log(currentIndex);
+
+  questionNumberDisplay.innerHTML = currentIndex + 1 + "/" + exam.length;
+
   renderOutput();
 });
