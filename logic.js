@@ -59,16 +59,19 @@ insy55.addEventListener("click", () => {
 });
 
 answer.addEventListener("click", () => {
-  console.log("click");
+  // return if exam is not loaded
+  if (exam.length <= 0) return;
 
   // show answer
   if (showAnswer) {
     questionDisplay.classList.add("d-none");
     answerDisplay.classList.remove("d-none");
+    answer.innerHTML = "Question";
     showAnswer = false;
     return;
   }
 
+  answer.innerHTML = "Answer";
   questionDisplay.classList.remove("d-none");
   answerDisplay.classList.add("d-none");
   showAnswer = true;
