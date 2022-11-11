@@ -11,6 +11,8 @@ const dcit26 = document.querySelector("#dcit26");
 const insy55 = document.querySelector("#insy55");
 const questionNumberDisplay = document.querySelector("#question-number");
 
+const auto = document.querySelector("#auto");
+
 const questionDisplay = document.querySelector("#question");
 const answerDisplay = document.querySelector("#answer");
 
@@ -20,6 +22,8 @@ let currentQuestion = null;
 
 // ignore
 let showAnswer = true;
+
+//status of auto
 let autoStatus = false;
 
 // data from text file || raw data
@@ -159,27 +163,6 @@ const showQuestion = () => {
           break;
         default:
           console.log("Error", data[index]);
-          let value = index;
-
-          console.log(data[value - 10]);
-          console.log(data[value - 9]);
-          console.log(data[value - 8]);
-          console.log(data[value - 7]);
-          console.log(data[value - 6]);
-          console.log(data[value - 5]);
-          console.log(data[value - 4]);
-          console.log(data[value - 3]);
-          console.log(data[value - 2]);
-          console.log(data[value - 1]);
-          console.log(value);
-          console.log(data[value]);
-          console.log(data[value + 1]);
-          console.log(data[value + 2]);
-          console.log(data[value + 3]);
-          console.log(data[value + 4]);
-          console.log(data[value + 5]);
-          console.log(data[value + 6]);
-          console.log(data[value + 7]);
       }
 
       exam.push(question);
@@ -258,4 +241,37 @@ next.addEventListener("click", () => {
   questionNumberDisplay.innerHTML = currentIndex + 1 + "/" + exam.length;
 
   renderOutput();
+});
+
+let interval;
+
+const timeout = (ms) => {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+};
+
+const autoClick = async () => {
+  interval = setInterval(async () => {
+    next.click();
+    await timeout(5000);
+    answer.click();
+    await timeout(3000);
+    answer.click();
+  }, 8000);
+};
+
+auto.addEventListener("click", () => {
+  //return if no exam
+  if (exam.length <= 0) return;
+
+  autoStatus = autoStatus ? false : true;
+
+  if (!autoStatus) {
+    auto.classList.remove("btn-dark");
+    console.log("clearing interval");
+    clearInterval(interval);
+    return;
+  }
+
+  auto.classList.add("btn-dark");
+  autoClick();
 });
