@@ -232,7 +232,7 @@ const renderOutput = () => {
 
   // loop throught the choices
   exam[currentIndex].choice.forEach((tempQuestion) => {
-    questionHolder = tempQuestion + "\n";
+    questionHolder += tempQuestion + "<br>";
   });
 
   //display choices
