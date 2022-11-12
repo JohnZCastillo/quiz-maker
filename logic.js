@@ -174,6 +174,22 @@ const showQuestion = () => {
           break;
         default:
           console.log("Error", data[index]);
+          console.log(data[index - 5]);
+          console.log(data[index - 4]);
+          console.log(data[index - 3]);
+          console.log(data[index - 2]);
+          console.log(data[index - 1]);
+          console.log(data[index]);
+          console.log(data[index + 1]);
+          console.log(data[index + 2]);
+          console.log(data[index + 3]);
+          console.log(data[index + 4]);
+          console.log(data[index + 5]);
+          console.log(data[index + 6]);
+          console.log(data[index + 7]);
+          console.log(data[index + 9]);
+          console.log(data[index + 9]);
+          console.log(data[index + 10]);
       }
 
       exam.push(question);
