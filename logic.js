@@ -63,6 +63,11 @@ itect90.addEventListener("click", () => {
   subject = "itec 90";
 });
 
+dcit26.addEventListener("click", () => {
+  changeFile("dicit25.txt");
+  subject = "dicit 26";
+});
+
 insy55.addEventListener("click", () => {
   changeFile("ins55.txt");
   subject = "insy 55";
