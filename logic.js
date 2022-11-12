@@ -64,7 +64,7 @@ itect90.addEventListener("click", () => {
 });
 
 dcit26.addEventListener("click", () => {
-  changeFile("dicit25.txt");
+  changeFile("dicit26.txt");
   subject = "dicit 26";
 });
 
