@@ -325,8 +325,5 @@
 + UTP meaning?
 - Unshielded twisted pair
 
-
-
-
-
-
++ How to configure BIOS?
+- 

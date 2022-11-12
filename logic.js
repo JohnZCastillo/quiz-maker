@@ -206,7 +206,16 @@ const random = () => Math.floor(Math.random() * exam.length);
 // render questions as html
 const renderOutput = () => {
   questionDisplay.innerHTML = exam[currentIndex].question;
-  answerDisplay.innerHTML = exam[currentIndex].choice[0];
+
+  let questionHolder = "";
+
+  // loop throught the choices
+  exam[currentIndex].choice.forEach((tempQuestion) => {
+    questionHolder = tempQuestion + "\n";
+  });
+
+  //display choices
+  answerDisplay.innerHTML = questionHolder;
 };
 
 const readFile = () => {
@@ -238,7 +247,7 @@ next.addEventListener("click", () => {
   if (!exam.length) return;
 
   // do not execute if last question is reach
-  if (currentIndex === exam.length) return;
+  if (currentIndex === exam.length - 1) return;
 
   currentIndex++;
 
