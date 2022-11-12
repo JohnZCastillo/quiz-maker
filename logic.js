@@ -5,6 +5,7 @@ const prev = document.querySelector("#previous");
 const subjectDisplay = document.querySelector("#subject");
 
 const answer = document.querySelector("#show-answer");
+const itect80 = document.querySelector("#itec80");
 const itect85 = document.querySelector("#itec85");
 const itect90 = document.querySelector("#itec90");
 const dcit26 = document.querySelector("#dcit26");
@@ -46,6 +47,11 @@ const changeFile = async (fileName) => {
     console.log(error.message);
   }
 };
+
+itect80.addEventListener("click", () => {
+  changeFile("itec80.txt");
+  subject = "itec 80";
+});
 
 itect85.addEventListener("click", () => {
   changeFile("itec85.txt");
