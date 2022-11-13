@@ -117,7 +117,7 @@
 - <strong> Structural Patterns</strong>: These describe how objects are composed into larger groups and explain how to assemble objects and classes into larger structures while keeping their structures flexible and efficient.
 - <strong> Behavioral Patterns</strong>: These describe how responsibilities are distributed between objects in the design and how communication happens between objects.
 
-+ Five (5) most commonly used requirements-gathering techniques:
++  Four (4) essential features in Design Patterns: 
 - 1. Pattern Name – This is the name of a pattern that can be used to describe a design problem, its solution, and consequences. 
 - 2. Problem – This describes when to use the pattern. It explains the problem and its context. 
 - 3. Solution – This describes the elements that make up the design, their relationships, responsibilities, and collaborations. The pattern provides an abstract description of a design problem and how a general arrangement of element solves it. 
