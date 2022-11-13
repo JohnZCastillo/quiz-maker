@@ -117,7 +117,13 @@
 - <strong> Structural Patterns</strong>: These describe how objects are composed into larger groups and explain how to assemble objects and classes into larger structures while keeping their structures flexible and efficient.
 - <strong> Behavioral Patterns</strong>: These describe how responsibilities are distributed between objects in the design and how communication happens between objects.
 
-+  Four (4) essential features in Design Patterns: 
++ Five (5) most commonly used requirements-gathering techniques:
+- 1. Pattern Name – This is the name of a pattern that can be used to describe a design problem, its solution, and consequences. 
+- 2. Problem – This describes when to use the pattern. It explains the problem and its context. 
+- 3. Solution – This describes the elements that make up the design, their relationships, responsibilities, and collaborations. The pattern provides an abstract description of a design problem and how a general arrangement of element solves it. 
+- 4. Consequences – These are the results and interchanges of applying the pattern to the problem. They include time and space tradeoffs, but also flexibility, extensibility, and portability, among others.
+
++  Five (5) most commonly used requirements-gathering techniques: 
 - 1 Interviews: This is the most commonly used requirement-gathering technique. In general, interviews comprise interviewers and interviewees.
 - 2 Joint Application Development (JAD): JAD is an information-gathering technique that allows the project team, users, and management to work together to identify requirements for the system. This is the most useful method for collecting information from clients and is a structured process that involves a group of participants to meet together under the direction of a facilitator
 - 3 Questionnaires: These are a set of written questions used to obtain information from individuals. These are often used when there is a large number of people from whom information and opinions are needed.
