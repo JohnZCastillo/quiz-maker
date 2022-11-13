@@ -11,4 +11,4 @@ This is a program in which participants can prepare for the examination through 
 
 ## Contributor
 - John Castillo
-- David Sherome Granada
+- David Sherom Granada
