@@ -8,7 +8,7 @@
 - Support Module
 
 + It converts instructions from a high-level language into machine language.
-- Translators converts
+- Translators
 
 + The only language that can be understand by a computer’s microprocessors.
 - Machine Language
@@ -17,7 +17,7 @@
 - Control Programs 
 
 + A subprograms or routines that is frequently use by the programmer. 
-- Service Programs is 
+- Service Programs
 
 + Designed to allow the user to manipulate images on a computer or to print the images on a printer.
 - Graphic Software Packages 
