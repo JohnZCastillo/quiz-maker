@@ -245,8 +245,8 @@ const readFile = () => {
   data = file.split("");
   // get question and answer
   showQuestion();
-  // shuffle index of exam
-  shuffleArray();
+  // shuffle index of exam || disabled shuffle
+  // shuffleArray();
   // displat the current subect
   subjectDisplay.innerHTML = subject;
 
