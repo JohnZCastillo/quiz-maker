@@ -9,6 +9,3 @@
 ## About
 This is a program in which participants can prepare for the examination through questions and answers.
 
-## Contributor
-- John Castillo
-- David Sherom Granada

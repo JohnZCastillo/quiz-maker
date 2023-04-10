@@ -12,8 +12,6 @@ const dcit26 = document.querySelector("#dcit26");
 const insy55 = document.querySelector("#insy55");
 const questionNumberDisplay = document.querySelector("#question-number");
 
-const auto = document.querySelector("#auto");
-
 const questionDisplay = document.querySelector("#question");
 const answerDisplay = document.querySelector("#answer");
 
@@ -24,14 +22,16 @@ let currentQuestion = null;
 // ignore
 let showAnswer = true;
 
-//status of auto
-let autoStatus = false;
-
 // data from text file || raw data
 let data = null;
 
 // data been converted to question and answer
 let exam = [];
+
+const settings = {
+  question: '+',
+  answer: "-"
+}
 
 const type = {
   fill: 0,
@@ -102,100 +102,30 @@ const generateQuestion = (type, question) => {
   };
 };
 
-// get text from file
-const getSentence = (start, condition) => {
-  for (let index = start; index < data.length; index++) {
-    if (data[index] === condition) {
-      // temporary holder for question
-      let tempQuestion = "";
+const processQuestion = (data)=>{
 
-      //   get all the letters of the sentence of the question
-      while (data[index] !== "\n") {
-        // to remove + from the beginning
-        index++;
+  // remove new line from string
+  data = data.replace('\n','');
 
-        tempQuestion += data[index];
-      }
+  //split every question
+  let questions = data.split(settings.question);
 
-      return {
-        index: ++index,
-        sentence: tempQuestion.trim(),
-      };
-    }
-  }
-};
+  //remove the first element from array since the split method creates an empty string 
+  // on the beggining of the array
+  questions.shift();
 
-// return array of choices
-const getChoices = (start, condition) => {
-  const questions = [];
+  //process separate question and answer for every number
+  questions.forEach(question => {
 
-  for (let index = start; index < data.length && data[index] !== "+"; index++) {
-    if (data[index] === condition) {
-      // temporary holder for question
-      let tempQuestion = "";
+    let answer = question.split(settings.answer);
+    let quiz = generateQuestion(type.multiple,[]);
+    quiz.question = question.substring(0,question.indexOf(settings.answer));
+    quiz.answer = answer[1];
 
-      //   get all the letters of the sentence of the question
-      while (data[index] !== "\n") {
-        // to remove + from the beginning
-        index++;
+    exam.push(quiz)
+  });
 
-        tempQuestion += data[index];
-      }
-
-      questions.push(tempQuestion.trim());
-    }
-  }
-  return questions;
-};
-
-// return question
-const showQuestion = () => {
-  for (let index = 0; index < data.length; index++) {
-    if (data[index] === "+") {
-      // get question
-      const value = getSentence(index, "+");
-
-      // update index
-      index = value.index;
-
-      //full question
-      const question = generateQuestion(type.multiple, value.sentence);
-
-      switch (data[index]) {
-        case "_":
-          //get choices
-          question.choice = getChoices(index, "_");
-          question.type = type.multiple;
-          break;
-        case "-":
-          //get choices
-          question.choice = getChoices(index, "-");
-          question.type = type.fill;
-          break;
-        default:
-          console.log("Error", data[index]);
-          console.log(data[index - 5]);
-          console.log(data[index - 4]);
-          console.log(data[index - 3]);
-          console.log(data[index - 2]);
-          console.log(data[index - 1]);
-          console.log(data[index]);
-          console.log(data[index + 1]);
-          console.log(data[index + 2]);
-          console.log(data[index + 3]);
-          console.log(data[index + 4]);
-          console.log(data[index + 5]);
-          console.log(data[index + 6]);
-          console.log(data[index + 7]);
-          console.log(data[index + 9]);
-          console.log(data[index + 9]);
-          console.log(data[index + 10]);
-      }
-
-      exam.push(question);
-    }
-  }
-};
+}
 
 const shuffleArray = () => {
   const usedIndex = [];
@@ -236,18 +166,21 @@ const renderOutput = () => {
   });
 
   //display choices
-  answerDisplay.innerHTML = questionHolder;
+  answerDisplay.innerHTML =  exam[currentIndex].answer;
 };
 
 const readFile = () => {
   //reset exam
   exam = [];
-  data = file.split("");
+  // data = file.split("");
   // get question and answer
-  showQuestion();
+  // showQuestion();
   // shuffle index of exam || disabled shuffle
   // shuffleArray();
   // displat the current subect
+
+  processQuestion(file.toString());
+  // processJson('test.json');
   subjectDisplay.innerHTML = subject;
 
   currentIndex = -1;
@@ -277,37 +210,4 @@ next.addEventListener("click", () => {
   questionNumberDisplay.innerHTML = currentIndex + 1 + "/" + exam.length;
 
   renderOutput();
-});
-
-let interval;
-
-const timeout = (ms) => {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-};
-
-const autoClick = async () => {
-  interval = setInterval(async () => {
-    next.click();
-    await timeout(5000);
-    answer.click();
-    await timeout(3000);
-    answer.click();
-  }, 8000);
-};
-
-auto.addEventListener("click", () => {
-  //return if no exam
-  if (exam.length <= 0) return;
-
-  autoStatus = autoStatus ? false : true;
-
-  if (!autoStatus) {
-    auto.classList.remove("btn-dark");
-    console.log("clearing interval");
-    clearInterval(interval);
-    return;
-  }
-
-  auto.classList.add("btn-dark");
-  autoClick();
 });
